@@ -7,9 +7,7 @@
     <h3>Cars</h3>
     <hr>
     <ul>
-      <li>Dominus - 10000</li>
-      <li>Octane - 5000</li>
-      <li>Fennec -50</li>
+      <li *ngFor="let car of cars">{{car.name}} - {{car.iq | number}} </li>
     </ul>
   </div>
 

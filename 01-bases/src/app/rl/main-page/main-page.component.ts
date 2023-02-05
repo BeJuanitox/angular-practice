@@ -11,18 +11,33 @@ interface Car {
   styleUrls: ['./main-page.component.css']
 })
 export class MainPageComponent {
-  
-  new:Car = {
-    name: 'Scarab',
-    iq: 90000
+
+  cars: Car[] = [
+    {
+      name: 'Octane',
+      iq: 200
+    },
+    {
+      name: 'Dominus',
+      iq: 600
+    }
+  ];
+
+  new: Car = {
+    name: '',
+    iq: 0
   }
 
-  changeName(e: any) {
-    console.log(e)
-  }
-  
   add() {
-    console.log(this.new);
+    if (this.new.name.trim().length === 0) {
+      return;
+    }
+
+    this.cars.push(this.new);
+    this.new = {
+      name: '',
+      iq: 0
+    }
   }
 }
 
