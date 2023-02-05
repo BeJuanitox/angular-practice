@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+
+import { Car } from '../interfaces/rl.interface';
 
 @Component({
   selector: 'app-cars',
@@ -6,6 +8,6 @@ import { Component } from '@angular/core';
 })
 export class CarsComponent   {
 
-  cars: any[] = [];
+  @Input('data') cars: Car[] = [];
 
 }

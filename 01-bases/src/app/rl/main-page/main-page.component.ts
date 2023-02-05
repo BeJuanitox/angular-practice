@@ -1,9 +1,6 @@
 import { Component } from '@angular/core';
 
-interface Car {
-  name: string;
-  iq: number;
-}
+import { Car } from '../interfaces/rl.interface';
 
 @Component({
   selector: 'app-main-page',
