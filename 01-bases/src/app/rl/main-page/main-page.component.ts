@@ -20,20 +20,9 @@ export class MainPageComponent {
   ];
 
   new: Car = {
-    name: '',
-    iq: 0
+    name: 'Nissan Skyline',
+    iq: 450
   }
 
-  add() {
-    if (this.new.name.trim().length === 0) {
-      return;
-    }
-
-    this.cars.push(this.new);
-    this.new = {
-      name: '',
-      iq: 0
-    }
-  }
 }
 

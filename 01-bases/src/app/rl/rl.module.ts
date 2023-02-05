@@ -4,12 +4,14 @@ import { FormsModule } from '@angular/forms';
 
 import { MainPageComponent } from './main-page/main-page.component';
 import { CarsComponent } from './cars/cars.component';
+import { AddComponent } from './add/add.component';
 
 
 @NgModule({
   declarations: [
     MainPageComponent,
-    CarsComponent
+    CarsComponent,
+    AddComponent
   ],
   exports: [
     MainPageComponent
