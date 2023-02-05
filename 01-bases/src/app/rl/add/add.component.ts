@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 import { Car } from '../interfaces/rl.interface';
 
@@ -8,19 +8,20 @@ import { Car } from '../interfaces/rl.interface';
 })
 export class AddComponent {
 
-  @Input() cars:Car [] = [];
-
   @Input() new: Car = {
     name: '',
     iq: 0
   }
 
+  @Output() onNewCharacter: EventEmitter<Car> = new EventEmitter();
+ 
   add() {
     if (this.new.name.trim().length === 0) {
       return;
     }
 
-    this.cars.push(this.new);
+    this.onNewCharacter.emit(this.new);
+
     this.new = {
       name: '',
       iq: 0

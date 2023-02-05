@@ -24,5 +24,9 @@ export class MainPageComponent {
     iq: 450
   }
 
+  addNewCharacter(arg: Car) {
+    this.cars.push(arg);
+  }
+
 }
 
