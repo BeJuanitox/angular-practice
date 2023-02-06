@@ -25,6 +25,7 @@ export class MainPageComponent {
   }
 
   addNewCharacter(arg: Car) {
+    // debugger; ó F5/Chrome (En lo personal no me dió).
     this.cars.push(arg);
   }
 
