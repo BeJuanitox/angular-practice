@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 
 import { Car } from '../interfaces/rl.interface';
+import { RlService } from '../services/rl.service';
 
 @Component({
   selector: 'app-cars',
@@ -10,4 +11,8 @@ export class CarsComponent   {
 
   @Input('data') cars: Car[] = [];
 
+  constructor( private rlService: RlService ) {
+    
+  }
+  
 }

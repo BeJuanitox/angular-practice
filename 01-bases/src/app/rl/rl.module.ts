@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { MainPageComponent } from './main-page/main-page.component';
 import { CarsComponent } from './cars/cars.component';
 import { AddComponent } from './add/add.component';
+import { RlService } from './services/rl.service';
 
 
 @NgModule({
@@ -19,6 +20,9 @@ import { AddComponent } from './add/add.component';
   imports: [
     CommonModule,
     FormsModule
+  ],
+  providers: [
+    RlService
   ]
 })
 export class RlModule { }

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
 import { Car } from '../interfaces/rl.interface';
+import { RlService } from '../services/rl.service';
 
 @Component({
   selector: 'app-main-page',
@@ -27,6 +28,10 @@ export class MainPageComponent {
   addNewCharacter(arg: Car) {
     // debugger; ó F5/Chrome (En lo personal no me dió).
     this.cars.push(arg);
+  }
+
+  constructor( private rlService: RlService ) {
+    
   }
 
 }
