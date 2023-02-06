@@ -9,7 +9,11 @@ import { RlService } from '../services/rl.service';
 })
 export class CarsComponent   {
 
-  @Input('data') cars: Car[] = [];
+  // @Input('data') cars: Car[] = [];
+
+  get cars() {
+    return this.rlService.cars;
+  }
 
   constructor( private rlService: RlService ) {
     

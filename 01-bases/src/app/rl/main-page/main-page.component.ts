@@ -9,29 +9,22 @@ import { RlService } from '../services/rl.service';
 })
 export class MainPageComponent {
 
-  cars: Car[] = [
-    {
-      name: 'Octane',
-      iq: 200
-    },
-    {
-      name: 'Dominus',
-      iq: 600
-    }
-  ];
-
   new: Car = {
     name: 'Nissan Skyline',
-    iq: 450
+    iq: 450 
   }
 
-  addNewCharacter(arg: Car) {
-    // debugger; ó F5/Chrome (En lo personal no me dió).
-    this.cars.push(arg);
-  }
+  // get cars():Car[] {
+  //   return this.rlService.cars;
+  // }
 
-  constructor( private rlService: RlService ) {
-    
+  // addNewCharacter(arg: Car) {
+  //   // debugger; ó F5/Chrome (En lo personal no me dió).
+  //   this.cars.push(arg);
+  // }
+
+  constructor(  ) {
+    // (private rlService: RlService)
   }
 
 }
