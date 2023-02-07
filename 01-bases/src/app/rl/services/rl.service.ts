@@ -21,8 +21,10 @@ export class RlService {
     return [...this._cars];
   }
 
-  constructor() {
-    console.log('Initial service');
+  // constructor() {}
+
+  addCar( car: Car ) {
+    this._cars.push(car);
   }
 
 }
