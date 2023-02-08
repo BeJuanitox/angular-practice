@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 import { Car } from '../interfaces/rl.interface';
-import { RlService } from '../services/rl.service';
+// import { RlService } from '../services/rl.service';
 
 @Component({
   selector: 'app-main-page',
@@ -28,4 +28,3 @@ export class MainPageComponent {
   }
 
 }
-

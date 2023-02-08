@@ -1,5 +1,5 @@
 import { Injectable } from "@angular/core";
-import { get } from "http";
+// import { get } from "http";
 
 import { Car } from "../interfaces/rl.interface";
 
@@ -20,8 +20,6 @@ export class RlService {
   get cars(): Car[] {
     return [...this._cars];
   }
-
-  // constructor() {}
 
   addCar( car: Car ) {
     this._cars.push(car);
