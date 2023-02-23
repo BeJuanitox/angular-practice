@@ -1,5 +1,7 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 
+import { GifService } from '../services/gif.service';
+
 @Component({
   selector: 'app-search',
   templateUrl: './search.component.html',
@@ -10,10 +12,12 @@ export class SearchComponent {
 
   @ViewChild('txtSearch') txtSearch!:ElementRef<HTMLInputElement>;
 
+  constructor(private gifService: GifService) {}
+
   search() {
     const value = this.txtSearch.nativeElement.value;
 
-    console.log(value)
+    this.gifService.searchGifs(value);
 
     this.txtSearch.nativeElement.value = '';
   }
