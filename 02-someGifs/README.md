@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Productions URL
 
-------------
+URL: `somegifs.netlify.app`
 
 ## Development server
 
