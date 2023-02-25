@@ -7,7 +7,7 @@ Practice projects while learning Angular
 Rocket League App 
 `https://rl-practice.netlify.app`
 
-Contador - Heros exercises
+Counter - Heros exercises
 
 ## 02-SomeGifs App
 
