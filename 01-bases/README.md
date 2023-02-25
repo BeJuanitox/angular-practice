@@ -1,5 +1,5 @@
 # Production version link
-Link: `https://statuesque-baklava-12e3e8.netlify.app/`
+Link: `https://rl-practice.netlify.app`
 
 # Bases
 
