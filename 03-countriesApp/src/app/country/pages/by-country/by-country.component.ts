@@ -19,7 +19,8 @@ export class ByCountryComponent {
 
   search(term: string){
     this.thereWrong = false;
-    this.term = this.term;
+    this.term = term;
+    
     this.countryService.searchCountry(term).subscribe(countries=>{
       console.log(countries);
       this.countries = countries;
@@ -29,4 +30,9 @@ export class ByCountryComponent {
     });
   }
 
+  suggestion(term: string){
+    this.thereWrong = false;
+    //Crea sugerenfcia.
+  }
+  
 }
