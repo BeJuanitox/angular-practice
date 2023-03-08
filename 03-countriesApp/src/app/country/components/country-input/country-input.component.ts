@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
+
 
 @Component({
   selector: 'app-country-input',
@@ -8,10 +9,12 @@ import { Component } from '@angular/core';
 })
 export class CountryInputComponent {
   
+  @Output() onEnter: EventEmitter<string> = new EventEmitter();
+
   term: string = '';
 
   search(){
-    console.log('Veo');
+    this.onEnter.emit(this.term);
   }
 
   constructor() { }
