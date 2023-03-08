@@ -22,7 +22,6 @@ export class ByCountryComponent {
     this.term = term;
     
     this.countryService.searchCountry(term).subscribe(countries=>{
-      console.log(countries);
       this.countries = countries;
     }, (wrong) => {
       this.thereWrong = true;
@@ -32,7 +31,7 @@ export class ByCountryComponent {
 
   suggestion(term: string){
     this.thereWrong = false;
-    //Crea sugerenfcia.
+    //Crea sugerenfcia. 
   }
   
 }
