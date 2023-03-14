@@ -1,6 +1,10 @@
-# 02CountriesApp
+# CountriesApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
+
+URL: `https://bj-countries-app.netlify.app/`
+
+<hr>
 
 ## Development server
 

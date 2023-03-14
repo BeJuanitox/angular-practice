@@ -1,9 +1,11 @@
-# Production version link
-Link: `https://rl-practice.netlify.app`
-
 # Bases
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
+
+## Production version link
+Link: `https://rl-practice.netlify.app`
+
+<hr>
 
 ## Development server
 

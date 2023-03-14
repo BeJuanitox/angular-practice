@@ -9,7 +9,16 @@ Practice projects while learning Angular
 
 Counter - Heros exercises
 
+<hr>
+
 ## 02-SomeGifs App
 
 [Web App to search Gifs](https://somegifs.netlify.app)
 `https://somegifs.netlify.app`
+
+<hr>
+
+## 03-Countries App
+
+[Web App to search Gifs](https://bj-countries-app.netlify.app/)
+`https://bj-countries-app.netlify.app/`
