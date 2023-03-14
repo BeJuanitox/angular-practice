@@ -7,6 +7,11 @@ import { Country } from '../../interfaces/country.interface';
   selector: 'app-by-country',
   templateUrl: './by-country.component.html',
   styles: [
+    `
+    li {
+      cursor: pointer;
+    }
+    `
   ]
 })
 export class ByCountryComponent {
@@ -14,10 +19,13 @@ export class ByCountryComponent {
   term: string = '';
   thereWrong: boolean = false;
   countries: Country[] = [];
+  suggestionCountries: Country[] = [];
+  showSuggestions: boolean = false;
 
   constructor(private countryService: CountryService) { }
 
   search(term: string){
+    this.showSuggestions = false;
     this.thereWrong = false;
     this.term = term;
     
@@ -31,7 +39,15 @@ export class ByCountryComponent {
 
   suggestion(term: string){
     this.thereWrong = false;
-    //Crea sugerenfcia. 
+    this.term = term;
+    this.showSuggestions = true;
+
+    this.countryService.searchCountry(term).subscribe(countries => this.suggestionCountries = countries.splice(0, 5), (wrong) => this.suggestionCountries = [] );
+
+  }
+
+  searchSuggestion (term: string) {
+    this.search(term);
   }
   
 }
