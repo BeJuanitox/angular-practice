@@ -1,10 +1,12 @@
+<div class="animate__animated animate__fadeIn animate__faster">
+  <h2>By Coutry:</h2>
+  <hr>
 
-<h2>By Coutry:</h2>
-<hr>
-
-<div class="row">
-  <div class="col">
-    <app-country-input (onEnter)="search($event)" (onDebounce)="suggestion($event)" placeholder="Search country..."></app-country-input>
+  <div class="row">
+    <div class="col">
+      <app-country-input (onEnter)="search($event)" (onDebounce)="suggestion($event)"
+        placeholder="Search country..."></app-country-input>
+    </div>
   </div>
 </div>
 
@@ -15,6 +17,6 @@
 
 <div *ngIf="countries.length > 0" class="row">
   <div class="col">
-    <app-country-table [countries]="countries" ></app-country-table>
+    <app-country-table [countries]="countries"></app-country-table>
   </div>
 </div>
