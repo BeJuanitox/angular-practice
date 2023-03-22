@@ -9,6 +9,7 @@ export class AppComponent {
   title = 'pipesApp';
 
   name: string = 'Sebastian';
+  value: number = 1500;
 
   showName() {
     console.log(this.name);
