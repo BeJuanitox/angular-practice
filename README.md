@@ -22,3 +22,11 @@ Counter - Heros exercises
 
 [Web App to search Gifs](https://bj-countries-app.netlify.app/)
 `https://bj-countries-app.netlify.app/`
+
+<hr>
+
+## 04-PipesApp
+
+In progress...
+
+<hr>
