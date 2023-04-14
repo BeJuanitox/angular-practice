@@ -1,4 +1,4 @@
-# angular-practice
+<h1 align="center"> Learning Angular </h1>
 
 Practice projects while learning Angular 
 
