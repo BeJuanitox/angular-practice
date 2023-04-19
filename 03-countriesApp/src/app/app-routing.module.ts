@@ -26,7 +26,7 @@ const routes: Routes = [
   },
   {
     path: '**',
-    redirectTo: '' //Redirect to wrong page 
+    redirectTo: '' //Redirect to wrong page
   }
 ];
 
