@@ -5,6 +5,7 @@ import { Observable, catchError, of } from 'rxjs';
 
 import { Hero } from '../interfaces/hero.interface';
 import { environments } from 'src/environments/environments';
+import { query } from '@angular/animations';
 
 
 @Injectable({providedIn: 'root'})
@@ -23,6 +24,10 @@ export class HeroesService {
       .pipe(
         catchError( error => of(undefined) )
       );
+  }
+
+  getSuggestions(): Observable<Hero[]> {
+    return this.http.get<Hero[]>(`/heroes?q=${query}&_limit=10`);
   }
 
 }
