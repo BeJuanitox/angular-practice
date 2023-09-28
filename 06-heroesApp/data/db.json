@@ -13,7 +13,8 @@
       "publisher": "DC Comics",
       "alter_ego": "Bruce Wayne",
       "first_appearance": "Detective Comics #27",
-      "characters": "Bruce Wayne"
+      "characters": "Bruce Wayne",
+      "alt_img": "https://i.pinimg.com/originals/ae/03/18/ae0318120e8cf4158705144e2b7fe824.jpg"
     },
     {
       "id": "dc-superman",
@@ -45,7 +46,8 @@
       "publisher": "DC Comics",
       "alter_ego": "Oliver Queen",
       "first_appearance": "More Fun Comics #73",
-      "characters": "Oliver Queen"
+      "characters": "Oliver Queen",
+      "alt_img": ""
     },
     {
       "id": "dc-wonder",
